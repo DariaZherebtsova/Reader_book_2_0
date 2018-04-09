@@ -1,0 +1,163 @@
+
+/*---------------------------------*/
+/* login-input  */
+
+#welcom_picture {
+    display:block;
+    margin:auto;
+    /* width: 30%; */
+    max-width: 30%;
+    min-width: 400px;
+}
+
+#login_input {
+    width: 100px;
+    text-align: center;
+}
+
+#login {
+    color:  #795548;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login button {
+    background: #795548;
+    color: #fff;
+    font-size:100%;
+}
+
+/*---------------------------------*/
+/* book_list  */
+
+nav, article {display:inline-block;}
+
+#books_menu_div, #books_menu_img {display:inline-block;}
+
+#books_menu {
+    position: relative;
+    /*left:30%;*/
+}
+
+.position-center {
+    left:30%;
+}
+
+.position-left {
+    vertical-align: top;
+    padding-top: 20px;
+    max-width: 200px;
+}
+
+.book_list__link {
+    display:inline-block;
+    width: 200px;
+    margin-right: 10px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis;
+}
+
+#books_menu_header {
+    text-align: center;
+    color: #5a0822;
+}
+
+#books_menu_div {
+    vertical-align:top;
+}
+
+#new_book_link {
+    padding-left:30px;
+}
+
+.book_list__item {
+    height: 30px;
+}
+
+/*===== article =========*/
+
+article {
+    margin-left: 35px;
+    vertical-align:top;
+}
+
+.inline {
+    display: inline-block; 
+    margin-left: 25px;
+    vertical-align:top;
+}
+
+/*===== для таблицы =========*/
+
+#for_table {
+    max-height:500px;
+    overflow: auto;
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    border-collapse: collapse;
+    text-align: center;
+    max-width: 295px;
+    max-height: 500px;
+}
+
+th {
+    /*background: rgba(156, 3, 4, 0.67);*/
+    font-family: "Century Gothic";
+    background: #795548;
+    color: white;
+    padding: 5px 5px;
+}
+
+td:first-child {
+    /*background: rgba(176, 96, 20, 0.78);*/
+    /*background: rgba(147, 15, 6, 0.73);*/
+    background: #9d7756;
+    color: white;
+    padding: 10px 10px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    background: rgba(255, 214, 47, 0.22);
+}
+
+th:first-child {
+    text-align: center;
+}
+td:first-child {
+    text-align: left;
+}
+
+#table_title {
+    color: #4a362e;
+    margin-left: 25px;
+}
+
+/*===== для графика =========*/
+#for_graph {
+    min-width: 850px;
+    min-height: 500px;
+    max-height: 510px;
+    background: rgba(255, 214, 47, 0.22);
+}
+
+.axis {
+    width: 100%;
+    height: 100%;
+    min-width: 850px;
+    min-height: 500px;
+    max-height: 510px;
+}
+
+#article_header {
+    color: #4a362e;
+    margin-left: 25px;
+}
