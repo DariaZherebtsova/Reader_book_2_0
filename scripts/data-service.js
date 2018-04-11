@@ -1,8 +1,8 @@
 
 'use strict';
 
-//const BASE_API_URL = 'https://mgrinko.github.io/js-2018-01-11/data';
- const BASE_API_URL = 'http://localhost:8080';
+const BASE_API_URL = 'https://dariazherebtsova.github.io/Reader_book_2_0/data';
+//const BASE_API_URL = 'http://localhost:8080';
 
 export default class DataService {
 
