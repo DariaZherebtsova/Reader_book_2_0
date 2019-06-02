@@ -124,9 +124,9 @@ export default class BookProgress extends Component {
       this._element.querySelector('article').insertAdjacentHTML("beforeEnd",'<div class=\"inline\" id=\"for_graph\"></div>');
 
        //для зума
-      let zoom = d3.zoom()
-          .scaleExtent([1, 10])
-          .on("zoom", zoomed);
+    //   let zoom = d3.zoom()
+    //       .scaleExtent([1, 10])
+    //       .on("zoom", zoomed);
 
       // создание объекта svg
       let svg = d3.select("#for_graph").append("svg")
@@ -136,7 +136,7 @@ export default class BookProgress extends Component {
         .append("g")
           .attr("class", "graphAllElem")
           .attr("transform", "translate(" + margin.left + "," + margin.right + ")")
-          .call(zoom);
+        //   .call(zoom);
 
       let rect = svg.append("rect")
           .attr("width", width)
@@ -227,11 +227,11 @@ export default class BookProgress extends Component {
       createChart(scaleUserData, "steelblue", "user");
       createChart(scaleControlData, "#FF7F0E", "norm");
 
-      function zoomed() {
-          console.log("zoooooooooooooooooooooom");
-          //container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-          container.attr('transform', 'translate(' + d3.event.transform.x + ',' + d3.event.transform.y + ') scale(' + d3.event.transform.k + ')');
-      }
+    //   function zoomed() {
+    //       console.log("zoooooooooooooooooooooom");
+    //       //container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    //       container.attr('transform', 'translate(' + d3.event.transform.x + ',' + d3.event.transform.y + ') scale(' + d3.event.transform.k + ')');
+    //   }
 
   }
 }  

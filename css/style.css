@@ -1,5 +1,14 @@
 
 /*---------------------------------*/
+div[data-page-body] {
+    padding-left: 20px;
+    margin: 10px auto;
+    /* max-width: 1200px; */
+    min-width: 1250px;
+    height: 1000px;
+    /* border: 2px solid rgb(167, 243, 104); */
+}
+
 /* login-input  */
 
 #welcom_picture {
@@ -35,7 +44,7 @@ nav, article {display:inline-block;}
 #books_menu_div, #books_menu_img {display:inline-block;}
 
 #books_menu {
-    position: relative;
+    /* position: relative; */
     /*left:30%;*/
 }
 
@@ -44,9 +53,12 @@ nav, article {display:inline-block;}
 }
 
 .position-left {
+    display: inline-block;
+    width: 18%;
+    /* border: 2px solid yellow; */
     vertical-align: top;
-    padding-top: 20px;
-    max-width: 200px;
+    /* padding-top: 20px;
+    max-width: 200px; */
 }
 
 .book_list__link {
@@ -78,26 +90,31 @@ nav, article {display:inline-block;}
 /*===== article =========*/
 
 article {
-    margin-left: 35px;
+    /* margin-left: 35px; */
     vertical-align:top;
+    width: 79%;
+    /* border: 2px solid rgb(255, 153, 0); */
 }
 
 .inline {
     display: inline-block; 
-    margin-left: 25px;
+    /* margin-left: 25px; */
     vertical-align:top;
 }
 
 /*===== для таблицы =========*/
 
 #for_table {
+    width: 250px;
     max-height:500px;
     overflow: auto;
+    
 }
 table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 12px;
     border-collapse: collapse;
+    border: 1px solid black;
     text-align: center;
     max-width: 295px;
     max-height: 500px;
@@ -106,27 +123,27 @@ table {
 th {
     /*background: rgba(156, 3, 4, 0.67);*/
     font-family: "Century Gothic";
-    background: #795548;
-    color: white;
+    /* background: #795548; */
+    /* color: white; */
     padding: 5px 5px;
 }
 
 td:first-child {
     /*background: rgba(176, 96, 20, 0.78);*/
     /*background: rgba(147, 15, 6, 0.73);*/
-    background: #9d7756;
-    color: white;
+    /* background: #9d7756; */
+    /* color: white; */
     padding: 10px 10px;
 }
 
 th, td {
     border-style: solid;
     border-width: 0 1px 1px 0;
-    border-color: white;
+    /* border-color: white; */
 }
 
 td {
-    background: rgba(255, 214, 47, 0.22);
+    /* background: rgba(255, 214, 47, 0.22); */
 }
 
 th:first-child {
@@ -143,10 +160,13 @@ td:first-child {
 
 /*===== для графика =========*/
 #for_graph {
-    min-width: 850px;
-    min-height: 500px;
-    max-height: 510px;
-    background: rgba(255, 214, 47, 0.22);
+    width: 720px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* min-width: 850px; */
+    height: 490px;
+    /* max-height: 510px; */
+    /* background: rgba(255, 214, 47, 0.22); */
 }
 
 .axis {
